@@ -1,0 +1,17 @@
+{
+  "name": "html",
+  "version": "1.0.0",
+  "description": "Une introduction à HTML",
+  "main": "README.md",
+  "scripts": {
+    "start": "reveal-md ./README.md -w",
+    "build": "reveal-md ./README.md --static dist",
+    "deploy": "npm run build && gh-pages --dist dist --branch master"
+  },
+  "author": "Ludovic Lafole",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^1.1.0",
+    "reveal-md": "^1.1.3"
+  }
+}
